@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <!-- Basic document settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enquiry | NO FOCUS Gaming</title>
+  <meta name="description" content="Enquire about gaming gear, book a LAN station, volunteer or sponsor a tournament.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts: Bungee (headings) and Rajdhani (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Rajdhani:wght@500;600;700&display=swap">
+
+  <!-- External stylesheet shared by every page -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== HEADER + NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NO FOCUS Gaming home">
+        <img src="images/logo.svg" alt="" width="64" height="64">
+        <span>NO FOCUS Gaming</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Gear</a></li>
+          <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main">
+    <!-- Page banner -->
+    <section class="page-hero">
+      <div class="container reveal">
+        <h1 class="glitch" data-text="Insert coin to enquire">Insert coin to enquire</h1>
+        <p class="lead">Tell us what you need. Ask about gear, book a station, or offer to volunteer or sponsor a tournament.</p>
+      </div>
+    </section>
+
+    <!-- Enquiry form -->
+    <section>
+      <div class="container" style="max-width:52rem">
+        <h2 class="section-title reveal">Player profile</h2>
+        <!-- action="#": there is no server yet; main.js shows a confirmation message -->
+        <form action="#" method="post" data-demo class="reveal">
+          <fieldset>
+            <legend>Your details</legend>
+            <label for="name">Gamer name or full name
+              <input type="text" id="name" name="name" autocomplete="name" required placeholder="e.g. Thandi M.">
+            </label>
+            <label for="email">Email address
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+            </label>
+            <label for="phone">Phone number (optional)
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="011 000 0000">
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your quest</legend>
+            <label for="topic">What is your enquiry about?
+              <select id="topic" name="topic" required>
+                <option value="">Choose a quest</option>
+                <option value="product">A product or price</option>
+                <option value="booking">Booking a LAN station</option>
+                <option value="volunteer">Volunteering at events</option>
+                <option value="sponsor">Sponsoring a tournament</option>
+              </select>
+            </label>
+            <label for="location">Preferred arena
+              <select id="location" name="location">
+                <option value="jhb">Johannesburg</option>
+                <option value="cpt">Cape Town</option>
+              </select>
+            </label>
+            <label for="message">Message
+              <textarea id="message" name="message" required placeholder="Tell us what you are looking for"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Loot drops</legend>
+            <div class="check-row">
+              <label for="news"><input type="checkbox" id="news" name="news"> Send me new game alerts</label>
+              <label for="events"><input type="checkbox" id="events" name="events"> Invite me to tournaments</label>
+            </div>
+          </fieldset>
+
+          <p class="form-msg" role="status" tabindex="-1">Quest accepted! We will reply within one business day.</p>
+          <button class="btn" type="submit">Send enquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>NO FOCUS Gaming</h2>
+          <p>Gaming gear, LAN stations and tournaments for every player. Die. Reload. Respawn.</p>
+          <p><small>Hint for pro players: try the Konami code.</small></p>
+        </div>
+        <div>
+          <h2>Pages</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Gear</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Player support</h2>
+          <ul>
+            <li><a href="mailto:hello@respawnarena.example">hello@respawnarena.example</a></li>
+            <li><a href="tel:+27110000000">011 000 0000</a></li>
+            <li><a href="enquiry.html">Book a station</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 NO FOCUS Gaming. Fictional business created for a student web development project.</p>
+    </div>
+  </footer>
+
+  <button class="btn to-top" type="button" aria-label="Back to top">Press start &#9650;</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
